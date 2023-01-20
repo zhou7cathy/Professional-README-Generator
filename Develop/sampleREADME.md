@@ -1,0 +1,1 @@
+{"title":"Weather dashboard","description":"This weather dashboard was created for traveler who wants to see the weather outlook for multiple cities in order to plan a trip accordingly.","Installation":"N/A","Usage":"N/A","License":"N/A","Contributing":"N/A","Tests":"N/A","GitHub":"zhou7cathy","email":"zhou7cathy@gmail.com"}
