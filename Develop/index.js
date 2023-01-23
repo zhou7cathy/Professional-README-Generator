@@ -25,12 +25,12 @@ const questions = [
         message: 'Please enter your usage information:',
         name: 'Usage',
       },
-    //   {
-    //     type: 'input',
-    //     message: 'Please select the license from below list of options:',
-    //     name: 'License',
-    //     choices: ['afl-3.0', 'apache-2.0', 'bsl-1.0'],
-    //   },
+      {
+        type: 'checkbox',
+        message: 'Please select the license from below list of options:',
+        name: 'License',
+        choices: ['MIT', 'GPL', 'IPL','MPL','none'],
+      },
       {
         type: 'input',
         message: 'Please enter the contribution guidelines of your project:',
@@ -62,7 +62,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((response)=>{
-        console.log("creating your README.md file");
+        console.log("Successfully created README.md file");
         var readmeMarkdown = generateMarkdown({...response});
         writeToFile("sampleREADME.md", readmeMarkdown);
     });
