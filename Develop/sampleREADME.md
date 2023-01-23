@@ -1,4 +1,4 @@
-# Work-Day-Scheduler
+# Weather-dashboard
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   ## Table of Contents
   - [Description](#Description)
@@ -10,11 +10,11 @@
   - [Questions](#Questions)
 
   ## Description
-  This Work Day Scheduler was created for employee with a busy schedule, who wants to add important events to daily planner in order to manage the time effectively.
+  This weather dashboard was created for traveler who wants to see the weather outlook for multiple cities in order to plan a trip accordingly.
   ## Installation
   N/A
   ## Usage
-  When you open the planner, the current day is displayed at the top of the calendar. When you scroll down, you will presented with time blocks for standard business hours. Each time block is color-coded to indicate whether it is in the past (grey), present (red), or future (green).When you click into a time block you can enter an event. Then, when you click the save button for that time block, the text for that event is saved in local storage. The saved events persist when you refresh the page.  
+  When you search for a city, you will presented with current and future conditions for that city and that city is added to the search history. When you view current weather conditions for that city, you will presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed. When you view future weather conditions for that city, you will presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity. When you click on a city in the search history, you will again presented with current and future conditions for that city.  
   ## License
   Application is covered under MIT https://opensource.org/licenses/MIT
   ## Contributing
