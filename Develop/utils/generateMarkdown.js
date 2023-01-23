@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(License) {
   if (License !== "none"){
@@ -8,7 +8,7 @@ function renderLicenseBadge(License) {
   }
 }
 
-// TODO: Create a function that returns the license link
+// function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(License) {
   if (License !== "none"){
@@ -18,17 +18,17 @@ function renderLicenseLink(License) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(License) {
   if(License !== "none"){
-    return `## License ${License}`;
+    return `Application is covered under ${License}`;
   }else{
     return " ";
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.Title}
   ${renderLicenseBadge(data.License)}
@@ -48,17 +48,15 @@ function generateMarkdown(data) {
   ## Usage
   ${data.Usage}  
   ## License
-  ${data.License}  
+  ${renderLicenseSection(data.License[0])} ${renderLicenseLink(data.License[0])}
   ## Contributing
   ${data.Contributing}
   ## Tests
   ${data.Tests}
   ## Questions
-  Link to my GitHub profile: https://github.com/${data.GitHub}
-  Email me with additional questions: ${data.email}
-
-
-
+  - Link to my GitHub profile: https://github.com/${data.GitHub}
+  - Email me with additional questions: ${data.email}
+  
 `;
 }
 
