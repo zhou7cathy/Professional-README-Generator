@@ -1,9 +1,15 @@
 // function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(License) {
-  if (License !== "none"){
+  if (License == "MIT"){
     return `![License: ${License}](https://img.shields.io/badge/License-${License}-yellow.svg)`;
-  }else{
+  }else if(License == "GPL v3" ){
+    return `![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)`
+  }else if (License == "IPL 1.0"){
+    return `![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)`
+  }else if (License == "MPL 2.0"){
+    return `![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)`
+  }else if (License == "none"){
     return " ";
   }
 }
@@ -11,9 +17,15 @@ function renderLicenseBadge(License) {
 // function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(License) {
-  if (License !== "none"){
+  if (License == "MIT"){
     return `https://opensource.org/licenses/${License}`;
-  }else{
+  }else if(License == "GPL v3" ){
+    return `https://www.gnu.org/licenses/gpl-3.0`
+  }else if (License == "IPL 1.0"){
+    return `https://opensource.org/licenses/IPL-1.0`
+  }else if (License == "MPL 2.0"){
+    return `https://opensource.org/licenses/MPL-2.0)`
+  }else if (License == "none"){
     return " ";
   }
 }

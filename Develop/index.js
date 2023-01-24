@@ -29,7 +29,7 @@ const questions = [
         type: 'checkbox',
         message: 'Please select the license from below list of options:',
         name: 'License',
-        choices: ['MIT', 'GPL', 'IPL','MPL','none'],
+        choices: ['MIT', 'GPL v3', 'IPL 1.0','MPL 2.0','none'],
       },
       {
         type: 'input',
