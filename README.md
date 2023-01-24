@@ -1,5 +1,13 @@
 # Professional-README-Generator
 
+## Table of Contents
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+
 ## Description
 This command-line application is created for users to be able to create a professional README for a new project in a fast way.
 
